@@ -139,7 +139,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow (num, num);
+  return Math.pow (num, 3);
 }
 
 function elevar(num, exponent) {
@@ -163,7 +163,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random (num);
+  return Math.random ();
 }
 
 function esPositivo(numero) {
@@ -200,7 +200,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
- return 'Hola' + nombre + '!';
+ return 'Hola ' + nombre + '!';
  
 }
 
@@ -221,7 +221,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  return (base * altura) / 2;
 }
 
 
@@ -229,7 +229,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+   return euro * 1.20;
 }
 
 
@@ -239,7 +239,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if (letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
 }
 
 
